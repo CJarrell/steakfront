@@ -1,3 +1,15 @@
+try {
+    window.$ = window.jQuery = require('jquery');
+
+    require('bootstrap-sass');
+} catch (e) {}
+
+// Global Variables
+window.moment = require('moment');
+// window.axios = require('axios');
+// window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+
+
 // Environment Config
 if (process.env.NODE_ENV === 'production') {
 	window.endpoint = 'https://ribeye.herokuapp.com';
@@ -5,10 +17,6 @@ if (process.env.NODE_ENV === 'production') {
 	window.endpoint = 'http://localhost:3000';
 }
 
-// Global Variables
-window.moment = require('moment');
-// window.axios = require('axios');
-// window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 import Vue from 'vue'
 import VueRouter from 'vue-router'

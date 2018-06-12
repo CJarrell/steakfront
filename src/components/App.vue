@@ -2,31 +2,35 @@
   <div id="app">
     <!-- Nav -->
     <nav class="navbar" role="navigation" aria-label="main navigation">
-        <a role="button" class="navbar-burger is-active" data-target="navMenu" aria-label="menu" aria-expanded="false">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-        <div class="navbar-menu is-active" id="navMenu">
-          <div class="navbar-start">
-            <router-link to="/" class="navbar-item">
-              64th Annual STEAKFRY | The Gresham Rotarian Club
-            </router-link>
-          </div>
-          <div class="navbar-end">
-            <router-link to="/" class="navbar-item">
-              Home
-            </router-link>
-            <router-link to="/Tickets" class="navbar-item">
-              Tickets
-            </router-link>
-            <router-link to="/Contact" class="navbar-item">
-              Contact
-            </router-link>
-            <a title="Visit the Gresham Rotary Club online" href="https://www.greshamrotary.com" class="navbar-item">
-              Gresham Rotary Club
-            </a>
-          </div>
+      <div class="navbar-brand">
+        <router-link to="/" class="navbar-item">
+            64th Annual STEAKFRY | The Gresham Rotarian Club
+        </router-link>
+
+      </div>
+
+      <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+
+      <div class="navbar-menu is-active" >
+        <div id="navMenu" class="navbar-end">
+          <router-link to="/" class="navbar-item">
+            Home
+          </router-link>
+          <router-link to="/Tickets" class="navbar-item">
+            Tickets
+          </router-link>
+          <router-link to="/Contact" class="navbar-item">
+            Contact
+          </router-link>
+          <a title="Visit the Gresham Rotary Club online" href="https://www.greshamrotary.com" class="navbar-item">
+            Gresham Rotary Club
+          </a>
+
+        </div>
           
         </div>
       
