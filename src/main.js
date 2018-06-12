@@ -7,8 +7,8 @@ if (process.env.NODE_ENV === 'production') {
 
 // Global Variables
 window.moment = require('moment');
-window.axios = require('axios');
-window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+// window.axios = require('axios');
+// window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 import Vue from 'vue'
 import VueRouter from 'vue-router'
@@ -16,7 +16,7 @@ import App from './components/App.vue'
 import Home from './components/Home.vue'
 import Tickets from './components/Tickets.vue'
 import Order from './components/Order.vue'
-import Complete from '/.components/Complete.vue'
+import Complete from './components/Complete.vue'
 import Contact from './components/Contact.vue'
 
 Vue.use(VueRouter);
@@ -38,6 +38,6 @@ new Vue({
  	el: '#app',
  	data(){
  		return {};
- 	}
+ 	},
   	render: h => h(App)
 });
